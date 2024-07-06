@@ -1,0 +1,16 @@
+{
+	"required": true,
+	"package": "com.jackyblackson.mixin.client",
+	"compatibilityLevel": "JAVA_17",
+	"client": [
+		"ChatScreenMixin",
+		"ExampleClientMixin",
+		"talkbubbles.AbstractClientPlayerEntityMixin",
+		"talkbubbles.ChatHudMixin",
+		"talkbubbles.DrawContextAccessor",
+		"talkbubbles.PlayerEntityRendererMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

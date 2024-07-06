@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "live-maid",
+	"version": "${version}",
+	"name": "Live Maid",
+	"description": "The mod that becomes your live helper: camera follow, chat sync, message display and so on!",
+	"authors": [
+		"Jacky_Blackson"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/live-maid/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.jackyblackson.LiveMaid"
+		],
+		"client": [
+			"com.jackyblackson.LiveMaidClient"
+		]
+	},
+	"mixins": [
+		"live-maid.mixins.json",
+		{
+			"config": "live-maid.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
